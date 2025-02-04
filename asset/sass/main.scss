@@ -1,0 +1,35 @@
+/////////////////////////////////////////////
+
+////////////////IMPORT SASS FILES///////////
+
+///////////////////////////////////////////
+// abstract (global utilities)
+@import 'abstract/variable';
+
+
+@import 'abstract/animation';
+
+// base (reset and typography)
+@import 'bass/bass';
+@import 'bass/typography';
+
+// layout (header, footer, breakpoints)
+
+@import 'layout/header';
+@import 'layout/footer';
+
+
+// components (hero, about, services, etc.)
+
+
+
+@import 'components/about';
+@import 'components/hero';
+@import 'components/services';
+@import 'components/contact';
+@import 'components/dark-theme';
+@import 'components/logo';
+@import 'components/portfolio';
+@import 'components/overlay';
+
+

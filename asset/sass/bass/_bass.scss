@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  box-sizing: inherit;
+  font-family: $font-ovo;
+  background-color: $color-white;
+  color: $color-black;
+  overflow-x: hidden;
+  transition: all .3s;
+  position: relative;
+}
+
+
+
+@font-face {
+  font-family: "outfit-regular";
+  src: url("/asset/font/Outfit-Regular.ttf") format("truetype");
+  font-weight: 400; // Regular
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "outfit-bold";
+  src: url("/asset/font/Outfit-Bold.ttf") format("truetype");
+  font-weight: 400; // Regular
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ovo";
+  src: url("/asset/font/Ovo-Regular.ttf") format("truetype");
+  font-weight: 400; // Regular
+  font-style: normal;
+}

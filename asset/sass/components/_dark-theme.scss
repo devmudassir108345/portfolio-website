@@ -1,0 +1,94 @@
+.toggle-btn {
+  background-color: $color-black;
+  transition: all 1s;
+
+  color: $color-white;
+
+  .hero {
+    // margin-top: 5rem;
+
+    transform: translateY(28%);
+  }
+  .hero__color {
+    transition: all 0.3s;
+    top: -1000%;
+  }
+
+  a {
+    color: $color-white;
+  }
+
+  .logo__text {
+    a {
+      color: $color-white;
+    }
+  }
+
+  .text {
+    color: $color-white;
+  }
+
+  .services__card-text {
+    color: $color-white;
+  }
+
+  .contact__img {
+    display: none;
+  }
+  .header {
+
+   
+
+    &__nav {
+      ul {
+        background-color: $color-white;
+      }
+    }
+  }
+
+  .btn {
+    &--white {
+      background-color: transparent;
+      border: 1px solid $color-white;
+      color: $color-white;
+    }
+
+    &--black {
+      color: $color-black;
+      background-color: $color-white;
+    }
+  }
+
+  .services {
+    &__card {
+      &:hover {
+        background-color: $color-secondary;
+        box-shadow: 6px 1rem 0 0 $color-gray;
+      }
+    }
+  }
+
+  .portfolio {
+    &__icon {
+      i {
+        background-color: $color-white;
+        color: $color-black;
+        transition: all 0.3s;
+      }
+    }
+    &__title {
+      background-color: $color-black;
+      p {
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: $color-white;
+      }
+
+      span {
+        color: #d3d3d3;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

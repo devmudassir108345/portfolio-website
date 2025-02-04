@@ -1,0 +1,58 @@
+.footer {
+  margin-top: 18.4rem;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__mail{
+   
+
+
+    a{
+        display: flex;
+        gap: 1.5rem;
+        font-size: 1.8rem ;
+        font-family: $font-outfit-regular;
+        color:$color-gray-dark;
+        align-items: center;
+    }
+  }
+
+  &__bottom{
+    margin-top: 5rem;
+    padding: 3.5rem 0;
+    border-top: 2px solid $color-border;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: $font-outfit-regular;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    color: #626262;
+    gap: 5rem;
+    flex-wrap: wrap;
+
+    @media (max-width : 767px) {
+        justify-content: center;
+    }
+    a{
+        color: #626262;
+    }
+    
+  }
+
+  &__col-2{
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    @media (max-width : 767px) {
+        justify-content: center;
+    }
+  }
+}

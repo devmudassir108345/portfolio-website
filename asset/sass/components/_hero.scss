@@ -1,0 +1,79 @@
+
+
+.hero {
+  
+
+  animation: downtoup 1.8s  ease .2s;
+  
+  transform: translateY(28%);
+
+  padding-bottom: 22rem;
+
+  @media (max-width: 767px) {
+    margin-top: 15rem;
+  }
+  &__color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    transition: all .3s;
+
+    
+    img {
+      width: 100%;
+    }
+  }
+
+  &__container {
+    max-width: 847px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+
+    img {
+      height: 158px;
+      width: 158px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  &__name{
+    font-size: 2.8rem;
+    margin: 2.3rem 0;
+    text-transform: capitalize;
+
+  }
+
+  &__title{
+    font-size: 8rem;
+
+    @media (max-width: 767px) {
+      font-size: 4.5rem;
+    }
+  }
+
+  &__text{
+    margin-top: 3.2rem;
+    margin-bottom: 4.8rem;
+  }
+
+  &__btns{
+    display: flex;
+    max-width: 448px;
+    // flex-wrap: wrap;
+    width: auto;
+    margin: 0 auto;
+    gap: 1.8rem;
+
+    @media (max-width: 767px) {
+     flex-wrap: wrap;
+    }
+  }
+}

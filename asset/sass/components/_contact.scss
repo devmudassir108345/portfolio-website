@@ -1,0 +1,77 @@
+.contact {
+  position: relative;
+  &__text {
+    max-width: 577px;
+    margin: 0 auto;
+  }
+
+  &__img {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: -1;
+    transition: all .3s;
+    img {
+      // width: 100%;
+    }
+  }
+  &__form {
+    margin: 7.6rem 0;
+    form {
+      max-width: 727px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 4.5rem;
+
+      input,
+      textarea {
+        padding: 1.8rem 1.3rem;
+        width: 100%;
+        outline: none;
+        border: 2px solid $color-border;
+        border-radius: 10px;
+        font-size: 1.6rem;
+        color: $color-black;
+
+        @media (max-width: 767px) {
+         width: auto;
+          }
+      }
+
+      input::placeholder,
+      textarea::placeholder {
+        font-size: 1.6rem;
+        color: $color-gray;
+        text-transform: capitalize;
+      }
+
+      textarea {
+        height: 215px;
+        resize: none;
+
+        @media (max-width: 767px) {
+          width: 94%;
+           }
+      }
+
+      .form {
+        &__group {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+          gap: 5rem;
+
+          @media (max-width: 767px) {
+          grid-template-columns: 1fr;
+          }
+        }
+
+        &__btn {
+          align-self: center;
+        }
+      }
+    }
+  }
+}

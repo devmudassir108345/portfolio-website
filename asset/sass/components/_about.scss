@@ -1,0 +1,121 @@
+.section--about {
+  margin: 20rem 0;
+}
+
+.about {
+  &__container {
+    max-width: 1280px;
+    margin-top: 8rem;
+    display: flex;
+    align-items: stretch;
+    // grid-template-columns: repeat(2, 1fr);
+    gap: 8.4rem;
+    position: relative;
+
+    @media (max-width: 1250px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__img {
+    max-width: 400px;
+    width: 100%;
+    // position: relative;
+    // height: 100%;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+  }
+
+  &__cards {
+    margin-top: 5.5rem;
+    margin-bottom: 4.2rem;
+    display: flex;
+    gap: 3rem;
+    font-family: $font-outfit-regular;
+    text-transform: capitalize;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+
+  &__card {
+    padding: 3.3rem 2rem;
+    border: 3px solid $color-gray;
+    border-radius: 10px;
+
+    width: 23%;
+    height: 100%;
+    transition: all 0.3s;
+
+    @media (max-width: 767px) {
+      width: 90%;
+      padding:auto 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &:hover {
+      box-shadow: 6px 1rem 0 0 $color-black;
+    }
+
+    &-title {
+      font-size: 2rem;
+      font-family: $font-outfit-bold;
+      letter-spacing: 0.7px;
+      margin-top: 2.7rem;
+      margin-bottom: 2rem;
+    }
+
+    &-text {
+      font-size: 1.6rem;
+      line-height: 2;
+      color: $color-gray;
+    }
+  }
+
+  &__tools {
+    // display: flex;
+    max-width: 435px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5 ,1fr );
+    gap: 1.4rem;
+    margin-top: 3rem;
+  }
+
+  &__tool {
+    // padding: 1.8rem;
+    border: 3px solid $color-gray;
+    // width: 11%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+   
+    &-img{
+      width: 70%;
+
+      img{
+        width: 100%;
+      }
+    }
+
+    
+
+    border-radius: 10px;
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+}

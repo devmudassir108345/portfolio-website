@@ -1,0 +1,87 @@
+.portfolio {
+  margin-top: 22rem;
+  margin-bottom: 12rem;
+
+  &__text {
+    text-align: center;
+    max-width: 764px;
+    margin: 0 auto;
+  }
+
+  &__container {
+    gap: 2.8rem;
+    margin-top: 10rem;
+    margin-bottom: 8.2rem;
+  }
+  &__card {
+    width: 100%;
+    position: relative;
+  }
+
+  &__img {
+    height: 325px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+
+  &__title {
+    background-color: $color-white;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    width: 80%;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: $font-outfit-regular;
+  }
+
+  &__name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    p {
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-transform: capitalize;
+      color: $color-black;
+    }
+
+    span {
+      color: #5e5e5e;
+      font-size: 1.6rem;
+    }
+  }
+
+  &__icon{
+    i{
+        font-size: 1.8rem;
+        background-color: $color-black;
+        color: $color-white;
+        height: 4.2rem;
+        width: 4.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+  }
+
+  &__btn{
+    width: max-content;
+    margin: 0   auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+}
